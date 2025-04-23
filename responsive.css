@@ -1,0 +1,274 @@
+  /* responsive.css */
+
+  /* Tablet და პატარა ლეპტოპები */
+  @media (max-width: 992px) {
+    .container {
+      width: 95%;
+    }
+
+    .price-cards,
+    .service-cards {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .price-card,
+    .service-card {
+      width: 100%;
+      padding: 30px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    .testimonial {
+      width: 95%;
+      margin: 15px auto;
+    }
+  }
+
+  /* Responsive Navigation Menu */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+
+    .nav-links {
+      flex-direction: column;
+      background-color: white;
+      position: absolute;
+      top: 65px;
+      right: 20px;
+      display: none;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      z-index: 999;
+    }
+
+    .nav-links a {
+      color: #0078D7;
+      padding: 10px 0;
+    }
+
+    .nav-links.active {
+      display: flex;
+    }
+  }
+
+  /* მობილურები */
+  @media (max-width: 768px) {
+  .hero {
+    position: relative !important;
+    top: auto !important;
+    z-index: auto !important;
+    margin: 0 !important;
+  }
+
+    .hero h1 {
+      font-size: 2rem;
+    }
+
+    .hero p {
+      font-size: 1rem;
+    }
+
+    .hero .logo {
+      width: 160px;
+      margin-bottom: 10px;
+    }
+
+    .hero .btn {
+      padding: 12px 25px;
+      font-size: 1rem;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .service-card,
+    .price-card {
+      width: 100%;
+      padding: 25px;
+    }
+
+    .service-cards,
+    .price-cards {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .price-card h3 {
+      font-size: 1.4rem;
+    }
+
+    .price-card p {
+      font-size: 1rem;
+    }
+
+    .testimonial {
+      font-size: 1rem;
+      margin: 10px 0;
+      padding: 15px;
+      width: 95%;
+    }
+
+    .contact p {
+      font-size: 1rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    .container {
+      width: 90%;
+    }
+  }
+
+  /* დამატებითი პატარა ეკრანებისთვის */
+  @media (max-width: 480px) {
+    .hero .btn {
+      width: 100%;
+    }
+
+    footer {
+      font-size: 0.9rem;
+      padding: 15px;
+    }
+
+    .contact p,
+    .contact a {
+      font-size: 0.95rem;
+    }
+
+    .price-card::before {
+      font-size: 1.4rem;
+    }
+
+    .hero h1 {
+      font-size: 1.6rem;
+    }
+
+    .hero p {
+      font-size: 0.9rem;
+    }
+
+    .price-card h3 {
+      font-size: 1.2rem;
+    }
+
+    .price-card p {
+      font-size: 0.9rem;
+    }
+
+    .service-card {
+      font-size: 1rem;
+      padding: 20px;
+    }
+
+    .testimonial {
+      font-size: 0.95rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 60px;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 16px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #0078D7;
+    }
+
+    .menu-toggle {
+      font-size: 1.5rem;
+      color: #000;
+      cursor: pointer;
+    }
+
+    nav ul {
+      margin-top: 60px;
+    }
+
+    /* hero სექციაზე ზემოდან ჰედერის ადგილი დატოვოს */
+    .hero {
+      margin-top: 60px;
+    }
+  }
+
+  /* ფასების ბარათების რესპონსივი */
+@media (max-width: 768px) {
+  .price-cards {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .price-card {
+    width: 90%;
+    padding: 25px;
+    font-size: 1rem;
+  }
+
+  .price-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .price-card .price {
+    font-size: 1.3rem;
+  }
+
+  .price-card ul li {
+    font-size: 0.95rem;
+  }
+
+  .price-card .btn {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .price-card {
+    padding: 20px;
+  }
+
+  .price-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .price-card .price {
+    font-size: 1.1rem;
+  }
+
+  .price-card ul li {
+    font-size: 0.9rem;
+  }
+
+  .price-card .btn {
+    font-size: 0.95rem;
+  }
+}
+

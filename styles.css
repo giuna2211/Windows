@@ -1,0 +1,348 @@
+/* GLOBAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans Georgian', 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto Slab', serif;
+  color: #0078D7;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Navigation */
+.logo-nav-text {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.logo-so {
+  color: #2e2e2e;
+}
+
+.logo-fix {
+  color: #007bff;
+}
+
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 8px 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #005fa3;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  background: url('hero background.png') no-repeat center center/cover;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  position: relative;
+}
+
+.hero .logo {
+  width: 250px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+  font-family: 'Noto Sans Georgian', sans-serif;
+}
+
+.hero p {
+  font-size: 1.4rem;
+  margin-bottom: 60px;
+  margin-top: 20px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+.spacer {
+  flex: 1;
+}
+
+.hero .btn {
+  margin-top: auto;
+  padding: 14px 36px;
+  background-color: #ffc107;
+  color: #222;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.hero .btn:hover {
+  background-color: #ffca28;
+  transform: translateY(-4px);
+}
+
+.program-logos {
+  padding: 30px 0;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap; /* რათა ლოგოები გადაინაცვლონ ხაზი-ხაზზე */
+  justify-content: center; /* ლოგოები ცენტრში იქნებიან */
+}
+
+.program-logos img {
+  width: 48px;  /* ლოგოები ზომით 48px */
+  height: auto;
+  margin: 10px 15px;
+  filter: brightness(1.1);
+  transition: transform 0.3s ease;
+}
+
+.program-logos img:hover {
+  transform: scale(1.1);
+}
+
+
+
+/* Services Section */
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 25px;
+  background-color: #f7f9fb;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.service-item {
+  font-size: 1.2rem;
+  padding: 12px 18px;
+  background-color: #ffffff;
+  border-left: 5px solid #0078D7;
+  border-radius: 8px;
+  line-height: 1.6;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+.services {
+  padding: 80px 20px;
+  background-color: #ffffff;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.service-card {
+  background-color: #0078D7;
+  color: white;
+  padding: 30px;
+  width: 48%;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-list p {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+/* Pricing Section */
+.pricing {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.pricing h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.pricing-intro {
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  color: #555;
+}
+
+.price-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  align-items: stretch; /* ✅ ბარათები ერთ სიმაღლეზე */
+}
+
+.price-card {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  display: flex;                /* ✅ flex შიგნით ელემენტებისთვის */
+  flex-direction: column;      /* ✅ ზემოდან ქვემოთ */
+  justify-content: space-between; /* ✅ ღილაკი ბოლოში */
+}
+
+.price-card h3 {
+  font-size: 20px;
+  color: #0078d7;
+  margin-bottom: 10px;
+}
+
+.price-card .price {
+  font-size: 26px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.price-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.price-card ul li {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.price-card .btn {
+  display: inline-block;
+  background-color: #0078d7;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.price-card .btn:hover {
+  background-color: #005fa3;
+}
+
+/* Hover ეფექტი სამ ბარათზე */
+.price-card:hover {
+  background-color: #f0f8ff;
+  border: 2px solid #007BFF;
+  box-shadow: 0 12px 24px rgba(0, 123, 255, 0.2);
+  transform: translateY(-5px);
+}
+
+.price-card:hover .btn {
+  background-color: #007BFF;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+/* Contact */
+.contact {
+  background-color: #f1f1f1;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.contact p {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #0078D7;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  font-size: 1rem; 
+}
+
+.seo-text {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #aaa;
+  text-align: center;
+  padding: 10px 20px;
+  line-height: 1.6;
+  font-size: xx-small;
+}
+
+
